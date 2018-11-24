@@ -1,6 +1,8 @@
 language: shell
 os: windows
 
+
+
 script:
-  - powershell Invoke-WebRequest http://raw.github.com/krlmlr/r-appveyor/master/scripts/appveyor-tool.ps1 -OutFile "..\appveyor-tool.ps1"
-  - powershell Import-Module '..\appveyor-tool.ps1'
+  - wget "https://cloud.r-project.org/bin/windows/base/R-win.exe"
+  - powershell Start-Process -FilePath ..\R-win.exe -ArgumentList "/VERYSILENT /DIR=C:\R" -NoNewWindow -Wait
