@@ -5,4 +5,4 @@ os: windows
 
 script:
   - wget "https://cloud.r-project.org/bin/windows/base/R-win.exe"
-  - powershell Start-Process -FilePath ..\R-win.exe -ArgumentList "/VERYSILENT /DIR=C:\R" -NoNewWindow -Wait
+  - powershell 'Start-Process -FilePath ..\R-win.exe -ArgumentList "/VERYSILENT /DIR=C:\R" -NoNewWindow -Wait'
