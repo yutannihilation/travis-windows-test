@@ -3,7 +3,7 @@ os: windows
 
 script:
   # install R
-  - wget "https://cloud.r-project.org/bin/windows/base/R-win.exe"
+  - wget "https://cloud.r-project.org/bin/windows/base/R-3.5.1-win.exe"
   - powershell 'Start-Process -FilePath ..\R-win.exe -ArgumentList "/VERYSILENT /DIR=C:\R" -NoNewWindow -Wait'
   # install Rtools
   - wget "https://cloud.r-project.org/bin/windows/Rtools/Rtools35.exe"
