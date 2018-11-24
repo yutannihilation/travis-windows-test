@@ -2,6 +2,11 @@ language: shell
 os: windows
 
 script:
+  - ls /
+  - ls /msys64
+  - ls /msys64/usr
+  - ls /msys64/usr/bin
+  - ls /msys64/usr/bin/pacman*  
   # install ICU
   - powershell 'Start-Process -FilePath C:\\msys64\\usr\\bin\\pacman.exe -ArgumentList "-Sy mingw-w64-x86_64-icu"'
   # install R
