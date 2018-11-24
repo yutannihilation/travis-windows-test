@@ -1,5 +1,5 @@
 language: shell
 os: windows
 
-before_script:
-  - curl https://example.com
+script:
+  - echo hello
